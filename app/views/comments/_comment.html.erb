@@ -1,0 +1,13 @@
+<p>
+  <b><%= comment.commenter %></b>
+</p>
+ 
+<p>
+  <em><%= comment.body %></em>
+</p>
+
+<p class="deleteButton">
+ 	<em><%= link_to 'Delete Comment', [comment.post, comment],
+	   :confirm => 'Are you sure?',
+	   :method => :delete %></em>
+</p>
